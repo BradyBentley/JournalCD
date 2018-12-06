@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266E18E521B9940700075C67 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E18E421B9940700075C67 /* CoreDataStack.swift */; };
+		266E18E721B996F900075C67 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E18E621B996F900075C67 /* Entry+Convenience.swift */; };
+		266E18EA21B9993D00075C67 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E18E921B9993D00075C67 /* EntryController.swift */; };
+		266E18EC21B99FEE00075C67 /* EntriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E18EB21B99FEE00075C67 /* EntriesListTableViewController.swift */; };
+		266E18EE21B9A99200075C67 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E18ED21B9A99200075C67 /* DateExtension.swift */; };
 		F723687021B9838A005224A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723686F21B9838A005224A6 /* AppDelegate.swift */; };
 		F723687521B9838A005224A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F723687321B9838A005224A6 /* Main.storyboard */; };
 		F723687821B9838A005224A6 /* JournalCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F723687621B9838A005224A6 /* JournalCD.xcdatamodeld */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		266E18E421B9940700075C67 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		266E18E621B996F900075C67 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		266E18E921B9993D00075C67 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		266E18EB21B99FEE00075C67 /* EntriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListTableViewController.swift; sourceTree = "<group>"; };
+		266E18ED21B9A99200075C67 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F723686C21B9838A005224A6 /* JournalCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F723686F21B9838A005224A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F723687421B9838A005224A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266E18E821B9992200075C67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F723687621B9838A005224A6 /* JournalCD.xcdatamodeld */,
+				266E18E421B9940700075C67 /* CoreDataStack.swift */,
+				266E18E621B996F900075C67 /* Entry+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F723686321B9838A005224A6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +74,11 @@
 		F723686E21B9838A005224A6 /* JournalCD */ = {
 			isa = PBXGroup;
 			children = (
+				266E18E921B9993D00075C67 /* EntryController.swift */,
+				266E18E821B9992200075C67 /* Model */,
 				F723688421B983D1005224A6 /* Resources */,
+				266E18EB21B99FEE00075C67 /* EntriesListTableViewController.swift */,
+				266E18ED21B9A99200075C67 /* DateExtension.swift */,
 			);
 			path = JournalCD;
 			sourceTree = "<group>";
@@ -67,7 +91,6 @@
 				F723687921B9838B005224A6 /* Assets.xcassets */,
 				F723687B21B9838B005224A6 /* LaunchScreen.storyboard */,
 				F723687E21B9838B005224A6 /* Info.plist */,
-				F723687621B9838A005224A6 /* JournalCD.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,6 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266E18EC21B99FEE00075C67 /* EntriesListTableViewController.swift in Sources */,
+				266E18EE21B9A99200075C67 /* DateExtension.swift in Sources */,
+				266E18E721B996F900075C67 /* Entry+Convenience.swift in Sources */,
+				266E18E521B9940700075C67 /* CoreDataStack.swift in Sources */,
+				266E18EA21B9993D00075C67 /* EntryController.swift in Sources */,
 				F723687821B9838A005224A6 /* JournalCD.xcdatamodeld in Sources */,
 				F723687021B9838A005224A6 /* AppDelegate.swift in Sources */,
 			);
@@ -291,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalCD/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCD/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalCD/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCD/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
